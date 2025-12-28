@@ -5,7 +5,7 @@ using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 using Twilio.Types;
 
-namespace OnlineMenu.Notifications.Providers.Twilio;
+namespace Notifications.Providers.Twilio;
 
 /// <summary>
 /// Twilio SMS provider implementation.

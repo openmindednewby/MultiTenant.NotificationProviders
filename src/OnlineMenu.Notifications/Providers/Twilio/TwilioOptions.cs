@@ -1,4 +1,4 @@
-namespace OnlineMenu.Notifications.Providers.Twilio;
+namespace Notifications.Providers.Twilio;
 
 /// <summary>
 /// Configuration options for Twilio SMS provider.

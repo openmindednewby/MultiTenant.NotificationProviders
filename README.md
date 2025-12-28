@@ -1,6 +1,6 @@
-# OnlineMenu.Notifications
+# Notifications
 
-[![NuGet](https://img.shields.io/nuget/v/OnlineMenu.Notifications.svg)](https://www.nuget.org/packages/OnlineMenu.Notifications)
+[![NuGet](https://img.shields.io/nuget/v/Notifications.svg)](https://www.nuget.org/packages/Notifications)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 SMS and email notification services with Twilio integration
@@ -8,7 +8,7 @@ SMS and email notification services with Twilio integration
 ## Installation
 
 ```bash
-dotnet add package OnlineMenu.Notifications
+dotnet add package Notifications
 ```
 
 ## Description
@@ -17,7 +17,7 @@ SMS and email notification services with Twilio integration
 
 ## Documentation
 
-See the [NuGet package page](https://www.nuget.org/packages/OnlineMenu.Notifications) for full documentation.
+See the [NuGet package page](https://www.nuget.org/packages/Notifications) for full documentation.
 
 ## Contributing
 
@@ -35,5 +35,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- Issues: [GitHub Issues](https://github.com/yourusername/OnlineMenu.Notifications/issues)
-- Discussions: [GitHub Discussions](https://github.com/yourusername/OnlineMenu.Notifications/discussions)
+- Issues: [GitHub Issues](https://github.com/yourusername/Notifications/issues)
+- Discussions: [GitHub Discussions](https://github.com/yourusername/Notifications/discussions)

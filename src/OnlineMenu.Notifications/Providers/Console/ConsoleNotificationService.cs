@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Logging;
 using OnlineMenu.Identity.Abstractions.Abstractions;
 
-namespace OnlineMenu.Notifications.Providers.Console;
+namespace Notifications.Providers.Console;
 
 /// <summary>
 /// Console-based notification service for development and testing.

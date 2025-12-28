@@ -1,9 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
 using OnlineMenu.Identity.Abstractions.Abstractions;
-using OnlineMenu.Notifications.Providers.Console;
-using OnlineMenu.Notifications.Providers.Twilio;
+using Notifications.Providers.Console;
+using Notifications.Providers.Twilio;
 
-namespace OnlineMenu.Notifications.Extensions;
+namespace Notifications.Extensions;
 
 /// <summary>
 /// Extension methods for registering notification services.
