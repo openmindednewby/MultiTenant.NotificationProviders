@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <RootNamespace>Notifications</RootNamespace>
-    <PackageId>NotificationServices</PackageId>
-    <Description>SMS and email notification providers. Includes Twilio SMS provider and console provider for development.</Description>
+    <PackageId>SaaS.NotificationProviders</PackageId>
+    <Description>SMS and email notification providers for multi-tenant SaaS applications. Includes Twilio SMS provider and console provider for development.</Description>
   </PropertyGroup>
 
   <ItemGroup>
