@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using OnlineMenu.Identity.Abstractions.Abstractions;
+using Identity.Abstractions.Abstractions;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 using Twilio.Types;

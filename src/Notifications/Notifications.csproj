@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>OnlineMenu.Notifications</RootNamespace>
-    <PackageId>OnlineMenu.Notifications</PackageId>
-    <Description>SMS and email notification providers for OnlineMenu. Includes Twilio SMS provider and console provider for development.</Description>
+    <RootNamespace>Notifications</RootNamespace>
+    <PackageId>Notifications</PackageId>
+    <Description>SMS and email notification providers. Includes Twilio SMS provider and console provider for development.</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OnlineMenu.Identity.Abstractions\OnlineMenu.Identity.Abstractions.csproj" />
+    <PackageReference Include="Identity.Abstractions" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>

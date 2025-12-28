@@ -1,5 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
-using OnlineMenu.Identity.Abstractions.Abstractions;
+using Identity.Abstractions.Abstractions;
 using Notifications.Providers.Console;
 using Notifications.Providers.Twilio;
 
