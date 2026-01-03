@@ -1,4 +1,4 @@
-# Building and Deploying Notifications
+# Building and Deploying MultiTenant.NotificationProviders
 
 This guide explains how to build, pack, and publish this NuGet package.
 
@@ -72,7 +72,7 @@ dotnet pack -c Release -o C:\LocalNuGet
 dotnet nuget add source C:\LocalNuGet -n LocalFeed
 
 # In your test project
-dotnet add package Notifications --version 1.0.0 --source LocalFeed
+dotnet add package MultiTenant.NotificationProviders --version 1.0.1 --source LocalFeed
 ```
 
 ### Option 2: Direct Package Reference
@@ -81,8 +81,8 @@ In your test project's `.csproj`:
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Notifications" Version="1.0.0">
-    <Source>C:\path\to\Notifications\artifacts\Notifications.1.0.0.nupkg</Source>
+  <PackageReference Include="MultiTenant.NotificationProviders" Version="1.0.1">
+    <Source>C:\path\to\Notifications\artifacts\MultiTenant.NotificationProviders.1.0.1.nupkg</Source>
   </PackageReference>
 </ItemGroup>
 ```
@@ -93,15 +93,15 @@ In your test project's `.csproj`:
 
 1. Go to https://www.nuget.org/account/apikeys
 2. Click **Create**
-3. Provide a key name (e.g., "Notifications")
+3. Provide a key name (e.g., "MultiTenant.NotificationProviders")
 4. Select **Push** scope
-5. Select packages or glob pattern (e.g., `Notifications*`)
+5. Select packages or glob pattern (e.g., `MultiTenant.NotificationProviders*`)
 6. Copy the generated API key
 
 ### Step 2: Publish
 
 ```bash
-dotnet nuget push ./artifacts/Notifications.1.0.0.nupkg \
+dotnet nuget push ./artifacts/MultiTenant.NotificationProviders.1.0.1.nupkg \
   --api-key YOUR_API_KEY \
   --source https://api.nuget.org/v3/index.json
 ```
@@ -111,15 +111,15 @@ dotnet nuget push ./artifacts/Notifications.1.0.0.nupkg \
 ### Step 3: Wait for Indexing
 
 NuGet.org takes 5-15 minutes to index new packages. You can monitor the status at:
-https://www.nuget.org/packages/Notifications
+https://www.nuget.org/packages/MultiTenant.NotificationProviders
 
 ## 🔄 Version Management
 
 This package follows [Semantic Versioning](https://semver.org/):
 
-- **Patch** (1.0.0 → 1.0.1): Bug fixes, no breaking changes
-- **Minor** (1.0.0 → 1.1.0): New features, backward compatible
-- **Major** (1.0.0 → 2.0.0): Breaking changes
+- **Patch** (1.0.1 → 1.0.2): Bug fixes, no breaking changes
+- **Minor** (1.0.1 → 1.1.0): New features, backward compatible
+- **Major** (1.0.1 → 2.0.0): Breaking changes
 
 ### Updating the Version
 
@@ -216,7 +216,7 @@ Before publishing, inspect what's in your package:
 
 ```bash
 # Extract .nupkg (it's a zip file)
-unzip Notifications.1.0.0.nupkg -d extracted/
+unzip MultiTenant.NotificationProviders.1.0.1.nupkg -d extracted/
 
 # View contents
 ls -R extracted/
@@ -241,7 +241,7 @@ If you're contributing to this package:
 If you try to publish the same version twice:
 
 ```
-error: Response status code does not indicate success: 409 (Conflict - The feed already contains 'Notifications' version '1.0.0'.)
+error: Response status code does not indicate success: 409 (Conflict - The feed already contains 'MultiTenant.NotificationProviders' version '1.0.1'.)
 ```
 
 **Solution:** Increment the version number. NuGet.org doesn't allow republishing the same version.
@@ -278,7 +278,7 @@ Make sure symbols are enabled in `Directory.Build.props`:
 
 - 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/Notifications/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/Notifications/discussions)
-- 📦 **NuGet**: [NuGet Package Page](https://www.nuget.org/packages/Notifications)
+- 📦 **NuGet**: [NuGet Package Page](https://www.nuget.org/packages/MultiTenant.NotificationProviders)
 
 ---
 
